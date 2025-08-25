@@ -1,52 +1,74 @@
-// Admin persona has access to all features
-permit(
-    principal in Persona::"admin",
-    action,
-    resource
-);
-
-// Manager persona can access dashboard, reports, and data export
-permit(
-    principal in Persona::"manager",
-    action in [
-        Action::"dashboard_access",
-        Action::"report_generation",
-        Action::"data_export"
-    ],
-    resource
-);
-
-// Analyst persona can only access dashboard
-permit(
-    principal in Persona::"analyst",
-    action == Action::"dashboard_access",
-    resource
-);
-
-// Feature-based access control
+// Admin, Developer, and Tester have access to all features and sub-features
 permit(
     principal,
-    action,
-    resource in Feature::"dashboard_access"
+    action == Action::"access",
+    resource
 )
 when {
-    principal.persona in ["admin", "manager", "analyst"]
+    principal in Persona::"admin"
 };
 
 permit(
     principal,
-    action,
-    resource in Feature::"user_management"
+    action == Action::"access",
+    resource
 )
 when {
-    principal.persona == "admin"
+    principal in Persona::"developer"
 };
 
 permit(
     principal,
-    action,
-    resource in Feature::"system_configuration"
+    action == Action::"access",
+    resource
 )
 when {
-    principal.persona == "admin"
+    principal in Persona::"tester"
+};
+
+// Manager has access to Decom feature, subfeature1 sub-feature, and subfeature3 sub-feature
+permit(
+    principal,
+    action == Action::"access",
+    resource == Feature::"feature1"
+)
+when {
+    principal in Persona::"manager"
+};
+
+permit(
+    principal,
+    action == Action::"access",
+    resource == SubFeature::"subfeature1"
+)
+when {
+    principal in Persona::"manager"
+};
+
+permit(
+    principal,
+    action == Action::"access",
+    resource == SubFeature::"subfeature3"
+)
+when {
+    principal in Persona::"manager"
+};
+
+// Analyst has access to subfeature1 sub-feature and subfeature3 sub-feature only
+permit(
+    principal,
+    action == Action::"access",
+    resource == SubFeature::"subfeature1"
+)
+when {
+    principal in Persona::"analyst"
+};
+
+permit(
+    principal,
+    action == Action::"access",
+    resource == SubFeature::"subfeature3"
+)
+when {
+    principal in Persona::"analyst"
 };

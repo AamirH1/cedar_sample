@@ -1,57 +1,82 @@
 [
   {
     "uid": {"__entity": {"type": "User", "id": "alice"}},
-    "attrs": {"persona": "admin"},
+    "attrs": {},
     "parents": [{"__entity": {"type": "Persona", "id": "admin"}}]
   },
   {
     "uid": {"__entity": {"type": "User", "id": "bob"}},
-    "attrs": {"persona": "manager"},
+    "attrs": {},
     "parents": [{"__entity": {"type": "Persona", "id": "manager"}}]
   },
   {
     "uid": {"__entity": {"type": "User", "id": "charlie"}},
-    "attrs": {"persona": "analyst"},
+    "attrs": {},
     "parents": [{"__entity": {"type": "Persona", "id": "analyst"}}]
   },
   {
+    "uid": {"__entity": {"type": "User", "id": "dave"}},
+    "attrs": {},
+    "parents": [{"__entity": {"type": "Persona", "id": "developer"}}]
+  },
+  {
+    "uid": {"__entity": {"type": "User", "id": "eve"}},
+    "attrs": {},
+    "parents": [{"__entity": {"type": "Persona", "id": "tester"}}]
+  },
+  {
     "uid": {"__entity": {"type": "Persona", "id": "admin"}},
-    "attrs": {"level": "high"},
+    "attrs": {},
+    "parents": []
+  },
+  {
+    "uid": {"__entity": {"type": "Persona", "id": "developer"}},
+    "attrs": {},
     "parents": []
   },
   {
     "uid": {"__entity": {"type": "Persona", "id": "manager"}},
-    "attrs": {"level": "medium"},
+    "attrs": {},
     "parents": []
   },
   {
     "uid": {"__entity": {"type": "Persona", "id": "analyst"}},
-    "attrs": {"level": "low"},
+    "attrs": {},
     "parents": []
   },
   {
-    "uid": {"__entity": {"type": "Feature", "id": "dashboard_access"}},
-    "attrs": {"category": "basic"},
+    "uid": {"__entity": {"type": "Persona", "id": "tester"}},
+    "attrs": {},
     "parents": []
   },
   {
-    "uid": {"__entity": {"type": "Feature", "id": "user_management"}},
-    "attrs": {"category": "admin"},
+    "uid": {"__entity": {"type": "Feature", "id": "feature1"}},
+    "attrs": {},
     "parents": []
   },
   {
-    "uid": {"__entity": {"type": "Feature", "id": "report_generation"}},
-    "attrs": {"category": "advanced"},
+    "uid": {"__entity": {"type": "Feature", "id": "feature2"}},
+    "attrs": {},
     "parents": []
   },
   {
-    "uid": {"__entity": {"type": "Feature", "id": "data_export"}},
-    "attrs": {"category": "advanced"},
-    "parents": []
+    "uid": {"__entity": {"type": "SubFeature", "id": "subfeature1"}},
+    "attrs": {},
+    "parents": [{"__entity": {"type": "Feature", "id": "feature2"}}]
   },
   {
-    "uid": {"__entity": {"type": "Feature", "id": "system_configuration"}},
-    "attrs": {"category": "admin"},
-    "parents": []
+    "uid": {"__entity": {"type": "SubFeature", "id": "subfeature4"}},
+    "attrs": {},
+    "parents": [{"__entity": {"type": "Feature", "id": "feature2"}}]
+  },
+  {
+    "uid": {"__entity": {"type": "SubFeature", "id": "subfeature2"}},
+    "attrs": {},
+    "parents": [{"__entity": {"type": "Feature", "id": "feature2"}}]
+  },
+  {
+    "uid": {"__entity": {"type": "SubFeature", "id": "subfeature3"}},
+    "attrs": {},
+    "parents": [{"__entity": {"type": "Feature", "id": "feature2"}}]
   }
 ]
