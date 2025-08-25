@@ -1,0 +1,57 @@
+[
+  {
+    "uid": {"__entity": {"type": "User", "id": "alice"}},
+    "attrs": {"persona": "admin"},
+    "parents": [{"__entity": {"type": "Persona", "id": "admin"}}]
+  },
+  {
+    "uid": {"__entity": {"type": "User", "id": "bob"}},
+    "attrs": {"persona": "manager"},
+    "parents": [{"__entity": {"type": "Persona", "id": "manager"}}]
+  },
+  {
+    "uid": {"__entity": {"type": "User", "id": "charlie"}},
+    "attrs": {"persona": "analyst"},
+    "parents": [{"__entity": {"type": "Persona", "id": "analyst"}}]
+  },
+  {
+    "uid": {"__entity": {"type": "Persona", "id": "admin"}},
+    "attrs": {"level": "high"},
+    "parents": []
+  },
+  {
+    "uid": {"__entity": {"type": "Persona", "id": "manager"}},
+    "attrs": {"level": "medium"},
+    "parents": []
+  },
+  {
+    "uid": {"__entity": {"type": "Persona", "id": "analyst"}},
+    "attrs": {"level": "low"},
+    "parents": []
+  },
+  {
+    "uid": {"__entity": {"type": "Feature", "id": "dashboard_access"}},
+    "attrs": {"category": "basic"},
+    "parents": []
+  },
+  {
+    "uid": {"__entity": {"type": "Feature", "id": "user_management"}},
+    "attrs": {"category": "admin"},
+    "parents": []
+  },
+  {
+    "uid": {"__entity": {"type": "Feature", "id": "report_generation"}},
+    "attrs": {"category": "advanced"},
+    "parents": []
+  },
+  {
+    "uid": {"__entity": {"type": "Feature", "id": "data_export"}},
+    "attrs": {"category": "advanced"},
+    "parents": []
+  },
+  {
+    "uid": {"__entity": {"type": "Feature", "id": "system_configuration"}},
+    "attrs": {"category": "admin"},
+    "parents": []
+  }
+]
