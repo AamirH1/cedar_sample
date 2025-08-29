@@ -1,82 +1,90 @@
 [
   {
-    "uid": {"__entity": {"type": "User", "id": "alice"}},
-    "attrs": {},
-    "parents": [{"__entity": {"type": "Persona", "id": "admin"}}]
-  },
-  {
-    "uid": {"__entity": {"type": "User", "id": "bob"}},
-    "attrs": {},
-    "parents": [{"__entity": {"type": "Persona", "id": "manager"}}]
-  },
-  {
-    "uid": {"__entity": {"type": "User", "id": "charlie"}},
-    "attrs": {},
-    "parents": [{"__entity": {"type": "Persona", "id": "analyst"}}]
-  },
-  {
-    "uid": {"__entity": {"type": "User", "id": "dave"}},
-    "attrs": {},
-    "parents": [{"__entity": {"type": "Persona", "id": "developer"}}]
-  },
-  {
-    "uid": {"__entity": {"type": "User", "id": "eve"}},
-    "attrs": {},
-    "parents": [{"__entity": {"type": "Persona", "id": "tester"}}]
-  },
-  {
-    "uid": {"__entity": {"type": "Persona", "id": "admin"}},
+    "uid": {
+      "__entity": {
+        "type": "Feature",
+        "id": "feature1"
+      }
+    },
     "attrs": {},
     "parents": []
   },
   {
-    "uid": {"__entity": {"type": "Persona", "id": "developer"}},
+    "uid": {
+      "__entity": {
+        "type": "Feature",
+        "id": "feature2"
+      }
+    },
     "attrs": {},
     "parents": []
   },
   {
-    "uid": {"__entity": {"type": "Persona", "id": "manager"}},
+    "uid": {
+      "__entity": {
+        "type": "SubFeature",
+        "id": "subfeature1"
+      }
+    },
     "attrs": {},
-    "parents": []
+    "parents": [
+      {
+        "__entity": {
+          "type": "Feature",
+          "id": "feature2"
+        }
+      }
+    ]
   },
   {
-    "uid": {"__entity": {"type": "Persona", "id": "analyst"}},
+    "uid": {
+      "__entity": {
+        "type": "SubFeature",
+        "id": "subfeature2"
+      }
+    },
     "attrs": {},
-    "parents": []
+    "parents": [
+      {
+        "__entity": {
+          "type": "Feature",
+          "id": "feature2"
+        }
+      }
+    ]
   },
   {
-    "uid": {"__entity": {"type": "Persona", "id": "tester"}},
+    "uid": {
+      "__entity": {
+        "type": "SubFeature",
+        "id": "subfeature3"
+      }
+    },
     "attrs": {},
-    "parents": []
+    "parents": [
+      {
+        "__entity": {
+          "type": "Feature",
+          "id": "feature2"
+        }
+      }
+    ]
   },
   {
-    "uid": {"__entity": {"type": "Feature", "id": "feature1"}},
+    "uid": {
+      "__entity": {
+        "type": "SubFeature",
+        "id": "subfeature4"
+      }
+    },
     "attrs": {},
-    "parents": []
-  },
-  {
-    "uid": {"__entity": {"type": "Feature", "id": "feature2"}},
-    "attrs": {},
-    "parents": []
-  },
-  {
-    "uid": {"__entity": {"type": "SubFeature", "id": "subfeature1"}},
-    "attrs": {},
-    "parents": [{"__entity": {"type": "Feature", "id": "feature2"}}]
-  },
-  {
-    "uid": {"__entity": {"type": "SubFeature", "id": "subfeature4"}},
-    "attrs": {},
-    "parents": [{"__entity": {"type": "Feature", "id": "feature2"}}]
-  },
-  {
-    "uid": {"__entity": {"type": "SubFeature", "id": "subfeature2"}},
-    "attrs": {},
-    "parents": [{"__entity": {"type": "Feature", "id": "feature2"}}]
-  },
-  {
-    "uid": {"__entity": {"type": "SubFeature", "id": "subfeature3"}},
-    "attrs": {},
-    "parents": [{"__entity": {"type": "Feature", "id": "feature2"}}]
+    "parents": [
+      {
+        "__entity": {
+          "type": "Feature",
+          "id": "feature2"
+        }
+      }
+    ]
   }
 ]

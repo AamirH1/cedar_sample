@@ -1,0 +1,123 @@
+[
+  {
+    "feature": "feature1",
+    "groups": [
+      "e6e00e41-72e6-4b7f-8e99-a3f6d826a961",
+      "2e648c70-58c0-4b94-a9ed-d2aab9323879",
+      "fab0c659-1d5a-462a-b494-28f86c08d16d"
+    ]
+  },
+  {
+    "feature": "feature2",
+    "groups": [
+      "e6e00e41-72e6-4b7f-8e99-a3f6d826a961",
+      "2e648c70-58c0-4b94-a9ed-d2aab9323879",
+      "fab0c659-1d5a-462a-b494-28f86c08d16d"
+    ]
+  },
+  {
+    "feature": "feature2",
+    "sub_feature": "subfeature1",
+    "groups": [
+      "e6e00e41-72e6-4b7f-8e99-a3f6d826a961",
+      "2e648c70-58c0-4b94-a9ed-d2aab9323879",
+      "fab0c659-1d5a-462a-b494-28f86c08d16d"
+    ]
+  },
+  {
+    "feature": "feature2",
+    "sub_feature": "subfeature2",
+    "groups": [
+      "e6e00e41-72e6-4b7f-8e99-a3f6d826a961",
+      "2e648c70-58c0-4b94-a9ed-d2aab9323879",
+      "fab0c659-1d5a-462a-b494-28f86c08d16d"
+    ]
+  },
+  {
+    "feature": "feature2",
+    "sub_feature": "subfeature3",
+    "groups": [
+      "e6e00e41-72e6-4b7f-8e99-a3f6d826a961",
+      "2e648c70-58c0-4b94-a9ed-d2aab9323879",
+      "fab0c659-1d5a-462a-b494-28f86c08d16d"
+    ]
+  },
+  {
+    "feature": "feature2",
+    "sub_feature": "subfeature4",
+    "groups": [
+      "e6e00e41-72e6-4b7f-8e99-a3f6d826a961",
+      "2e648c70-58c0-4b94-a9ed-d2aab9323879",
+      "fab0c659-1d5a-462a-b494-28f86c08d16d"
+    ]
+  },
+  {
+    "feature": "feature1",
+    "groups": ["e76c4c4a-82ca-4565-a121-ed7aeb0be746"]
+  },
+  {
+    "feature": "feature2",
+    "groups": ["e76c4c4a-82ca-4565-a121-ed7aeb0be746"]
+  },
+  {
+    "feature": "feature2",
+    "sub_feature": "subfeature1",
+    "groups": ["e76c4c4a-82ca-4565-a121-ed7aeb0be746"]
+  },
+  {
+    "feature": "feature2",
+    "sub_feature": "subfeature4",
+    "groups": ["e76c4c4a-82ca-4565-a121-ed7aeb0be746"]
+  },
+  {
+    "feature": "feature2",
+    "sub_feature": "subfeature2",
+    "groups": ["e76c4c4a-82ca-4565-a121-ed7aeb0be746"]
+  },
+  {
+    "feature": "feature2",
+    "sub_feature": "subfeature3",
+    "groups": ["e76c4c4a-82ca-4565-a121-ed7aeb0be746"]
+  },
+  {
+    "feature": "feature2",
+    "groups": ["75415da5-ff7d-4d9f-b85c-e98951c229c3"]
+  },
+  {
+    "feature": "feature2",
+    "sub_feature": "subfeature1",
+    "groups": ["75415da5-ff7d-4d9f-b85c-e98951c229c3"]
+  },
+  {
+    "feature": "feature2",
+    "sub_feature": "subfeature4",
+    "groups": ["75415da5-ff7d-4d9f-b85c-e98951c229c3"]
+  },
+  {
+    "feature": "feature1",
+    "groups": ["75415da5-ff7d-4d9f-b85c-e98951c229c3"]
+  },
+  {
+    "feature": "feature2",
+    "sub_feature": "subfeature2",
+    "groups": ["75415da5-ff7d-4d9f-b85c-e98951c229c3"]
+  },
+  {
+    "feature": "feature2",
+    "sub_feature": "subfeature3",
+    "groups": ["75415da5-ff7d-4d9f-b85c-e98951c229c3"]
+  },
+  {
+    "feature": "feature1",
+    "groups": []
+  },
+  {
+    "feature": "feature2",
+    "groups": []
+  },
+  {
+    "feature": "feature2",
+    "sub_feature": "subfeature1",
+    "groups": []
+  }
+]

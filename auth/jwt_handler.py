@@ -21,13 +21,6 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 def create_access_token(data: Dict, expires_delta: Optional[timedelta] = None) -> str:
     """
     Create JWT access token
-    
-    Args:
-        data: Payload data to encode
-        expires_delta: Token expiration time
-        
-    Returns:
-        Encoded JWT token string
     """
     to_encode = data.copy()
     
@@ -43,12 +36,6 @@ def create_access_token(data: Dict, expires_delta: Optional[timedelta] = None) -
 def decode_jwt(token: str) -> Optional[Dict]:
     """
     Decode and validate JWT token
-    
-    Args:
-        token: JWT token string
-        
-    Returns:
-        Decoded payload or None if invalid
     """
     try:
         decoded_token = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
